@@ -1,0 +1,10 @@
+C:\Users\Pleon\Downloads\Patrones-de-disenio-master\Patrones-de-disenio-master\Proyecto .Net\Customer.Domain\bin\Debug\netstandard2.1\Customer.Domain.deps.json
+C:\Users\Pleon\Downloads\Patrones-de-disenio-master\Patrones-de-disenio-master\Proyecto .Net\Customer.Domain\bin\Debug\netstandard2.1\Customer.Domain.dll
+C:\Users\Pleon\Downloads\Patrones-de-disenio-master\Patrones-de-disenio-master\Proyecto .Net\Customer.Domain\bin\Debug\netstandard2.1\Customer.Domain.pdb
+C:\Users\Pleon\Downloads\Patrones-de-disenio-master\Patrones-de-disenio-master\Proyecto .Net\Customer.Domain\obj\Debug\netstandard2.1\Customer.Domain.csproj.AssemblyReference.cache
+C:\Users\Pleon\Downloads\Patrones-de-disenio-master\Patrones-de-disenio-master\Proyecto .Net\Customer.Domain\obj\Debug\netstandard2.1\Customer.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pleon\Downloads\Patrones-de-disenio-master\Patrones-de-disenio-master\Proyecto .Net\Customer.Domain\obj\Debug\netstandard2.1\Customer.Domain.AssemblyInfoInputs.cache
+C:\Users\Pleon\Downloads\Patrones-de-disenio-master\Patrones-de-disenio-master\Proyecto .Net\Customer.Domain\obj\Debug\netstandard2.1\Customer.Domain.AssemblyInfo.cs
+C:\Users\Pleon\Downloads\Patrones-de-disenio-master\Patrones-de-disenio-master\Proyecto .Net\Customer.Domain\obj\Debug\netstandard2.1\Customer.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Pleon\Downloads\Patrones-de-disenio-master\Patrones-de-disenio-master\Proyecto .Net\Customer.Domain\obj\Debug\netstandard2.1\Customer.Domain.dll
+C:\Users\Pleon\Downloads\Patrones-de-disenio-master\Patrones-de-disenio-master\Proyecto .Net\Customer.Domain\obj\Debug\netstandard2.1\Customer.Domain.pdb

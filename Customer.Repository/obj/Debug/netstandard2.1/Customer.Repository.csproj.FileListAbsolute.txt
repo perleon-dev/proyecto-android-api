@@ -1,0 +1,13 @@
+C:\Users\Pleon\Downloads\Patrones-de-disenio-master\Patrones-de-disenio-master\Proyecto .Net\Customer.Repository\bin\Debug\netstandard2.1\Customer.Repository.deps.json
+C:\Users\Pleon\Downloads\Patrones-de-disenio-master\Patrones-de-disenio-master\Proyecto .Net\Customer.Repository\bin\Debug\netstandard2.1\Customer.Repository.dll
+C:\Users\Pleon\Downloads\Patrones-de-disenio-master\Patrones-de-disenio-master\Proyecto .Net\Customer.Repository\bin\Debug\netstandard2.1\Customer.Repository.pdb
+C:\Users\Pleon\Downloads\Patrones-de-disenio-master\Patrones-de-disenio-master\Proyecto .Net\Customer.Repository\bin\Debug\netstandard2.1\Customer.Domain.dll
+C:\Users\Pleon\Downloads\Patrones-de-disenio-master\Patrones-de-disenio-master\Proyecto .Net\Customer.Repository\bin\Debug\netstandard2.1\Customer.Domain.pdb
+C:\Users\Pleon\Downloads\Patrones-de-disenio-master\Patrones-de-disenio-master\Proyecto .Net\Customer.Repository\obj\Debug\netstandard2.1\Customer.Repository.csproj.AssemblyReference.cache
+C:\Users\Pleon\Downloads\Patrones-de-disenio-master\Patrones-de-disenio-master\Proyecto .Net\Customer.Repository\obj\Debug\netstandard2.1\Customer.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pleon\Downloads\Patrones-de-disenio-master\Patrones-de-disenio-master\Proyecto .Net\Customer.Repository\obj\Debug\netstandard2.1\Customer.Repository.AssemblyInfoInputs.cache
+C:\Users\Pleon\Downloads\Patrones-de-disenio-master\Patrones-de-disenio-master\Proyecto .Net\Customer.Repository\obj\Debug\netstandard2.1\Customer.Repository.AssemblyInfo.cs
+C:\Users\Pleon\Downloads\Patrones-de-disenio-master\Patrones-de-disenio-master\Proyecto .Net\Customer.Repository\obj\Debug\netstandard2.1\Customer.Repository.csproj.CoreCompileInputs.cache
+C:\Users\Pleon\Downloads\Patrones-de-disenio-master\Patrones-de-disenio-master\Proyecto .Net\Customer.Repository\obj\Debug\netstandard2.1\Customer.Repository.csproj.CopyComplete
+C:\Users\Pleon\Downloads\Patrones-de-disenio-master\Patrones-de-disenio-master\Proyecto .Net\Customer.Repository\obj\Debug\netstandard2.1\Customer.Repository.dll
+C:\Users\Pleon\Downloads\Patrones-de-disenio-master\Patrones-de-disenio-master\Proyecto .Net\Customer.Repository\obj\Debug\netstandard2.1\Customer.Repository.pdb
