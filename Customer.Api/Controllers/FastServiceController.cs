@@ -23,12 +23,21 @@ namespace Customer.Api.Controllers
             IFastServiceQueryHandler = iFastServiceQueryHandler ?? throw new ArgumentNullException(nameof(iFastServiceQueryHandler));
         }
 
-        [HttpGet("get-search-by-id-cliente")]
+        [HttpPost("login")]
         [ProducesResponseType(typeof(userLoginViewModel), (int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.NotFound)]
-        public async Task<IActionResult> GetByBlobStorage([FromQuery] LoginRequest login)
+        public async Task<IActionResult> login( LoginRequest login)
         {
             var result =  IFastServiceQueryHandler.Login(login);
+            return Ok(result);
+        }
+
+        [HttpPost("prueba")]
+        [ProducesResponseType(typeof(userLoginViewModel), (int)HttpStatusCode.OK)]
+        [ProducesResponseType((int)HttpStatusCode.NotFound)]
+        public async Task<IActionResult> prueba(LoginRequest login)
+        {
+            var result = IFastServiceQueryHandler.Prueba(login);
             return Ok(result);
         }
 

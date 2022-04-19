@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yZLy/mMW7pt4zJCGJKrlF5quj0gDFWlW9jBCSuxqLRVauZYatLxzvNdqt0QkCCfDlu+t7qhwErEbTVtPhizNOg==",
+  "dgSpecHash": "GtBndie47i05yAMufwrYWOHAJ4aOUg+mDTbi0k8vsSzcfNWaQMHqY+eOXRqledIJ9HVNL137uPPJ+P9rZfd63A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Pleon\\Downloads\\Patrones-de-disenio-master\\Patrones-de-disenio-master\\Proyecto .Net\\Customer.Api\\Customer.Api.csproj",
+  "projectFilePath": "C:\\Aplicaciones Personales\\proyecto-android-api\\Customer.Api\\Customer.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Pleon\\.nuget\\packages\\autofac\\6.2.0\\autofac.6.2.0.nupkg.sha512",
     "C:\\Users\\Pleon\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.1.0\\autofac.extensions.dependencyinjection.7.1.0.nupkg.sha512",

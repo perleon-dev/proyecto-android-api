@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fvq9CRosYh5q1go/sGVUGNClLeKH2QfKcJAObVrF2EGmHTIHNtVpBgweWML2enr1CdDJ0+DLalrWUQL+14HfKw==",
+  "dgSpecHash": "XYHOJ43XCUnNZ/FPnA0i+O+VOW9AgwG/v+GnCW1d3XQvSH6K5L7ddpYXKqG+t7DJHEvRcYwvyaUidR11njnMvQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Pleon\\Downloads\\Patrones-de-disenio-master\\Patrones-de-disenio-master\\Proyecto .Net\\Customer.Application\\Customer.Application.csproj",
+  "projectFilePath": "C:\\Aplicaciones Personales\\proyecto-android-api\\Customer.Application\\Customer.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Pleon\\.nuget\\packages\\azure.core\\1.19.0\\azure.core.1.19.0.nupkg.sha512",
     "C:\\Users\\Pleon\\.nuget\\packages\\azure.storage.blobs\\12.10.0\\azure.storage.blobs.12.10.0.nupkg.sha512",

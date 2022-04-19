@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Pleon\\Downloads\\Patrones-de-disenio-master\\Patrones-de-disenio-master\\Proyecto .Net\\Customer.Application\\Customer.Application.csproj": {}
+    "C:\\Aplicaciones Personales\\proyecto-android-api\\Customer.Application\\Customer.Application.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Pleon\\Downloads\\Patrones-de-disenio-master\\Patrones-de-disenio-master\\Proyecto .Net\\Customer.Application\\Customer.Application.csproj": {
+    "C:\\Aplicaciones Personales\\proyecto-android-api\\Customer.Application\\Customer.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Pleon\\Downloads\\Patrones-de-disenio-master\\Patrones-de-disenio-master\\Proyecto .Net\\Customer.Application\\Customer.Application.csproj",
+        "projectUniqueName": "C:\\Aplicaciones Personales\\proyecto-android-api\\Customer.Application\\Customer.Application.csproj",
         "projectName": "Customer.Application",
-        "projectPath": "C:\\Users\\Pleon\\Downloads\\Patrones-de-disenio-master\\Patrones-de-disenio-master\\Proyecto .Net\\Customer.Application\\Customer.Application.csproj",
+        "projectPath": "C:\\Aplicaciones Personales\\proyecto-android-api\\Customer.Application\\Customer.Application.csproj",
         "packagesPath": "C:\\Users\\Pleon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Pleon\\Downloads\\Patrones-de-disenio-master\\Patrones-de-disenio-master\\Proyecto .Net\\Customer.Application\\obj\\",
+        "outputPath": "C:\\Aplicaciones Personales\\proyecto-android-api\\Customer.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Pleon\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "netstandard2.1": {
             "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "C:\\Users\\Pleon\\Downloads\\Patrones-de-disenio-master\\Patrones-de-disenio-master\\Proyecto .Net\\Customer.Domain\\Customer.Domain.csproj": {
-                "projectPath": "C:\\Users\\Pleon\\Downloads\\Patrones-de-disenio-master\\Patrones-de-disenio-master\\Proyecto .Net\\Customer.Domain\\Customer.Domain.csproj"
+              "C:\\Aplicaciones Personales\\proyecto-android-api\\Customer.Domain\\Customer.Domain.csproj": {
+                "projectPath": "C:\\Aplicaciones Personales\\proyecto-android-api\\Customer.Domain\\Customer.Domain.csproj"
               }
             }
           }
@@ -92,14 +92,14 @@
         }
       }
     },
-    "C:\\Users\\Pleon\\Downloads\\Patrones-de-disenio-master\\Patrones-de-disenio-master\\Proyecto .Net\\Customer.Domain\\Customer.Domain.csproj": {
+    "C:\\Aplicaciones Personales\\proyecto-android-api\\Customer.Domain\\Customer.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Pleon\\Downloads\\Patrones-de-disenio-master\\Patrones-de-disenio-master\\Proyecto .Net\\Customer.Domain\\Customer.Domain.csproj",
+        "projectUniqueName": "C:\\Aplicaciones Personales\\proyecto-android-api\\Customer.Domain\\Customer.Domain.csproj",
         "projectName": "Customer.Domain",
-        "projectPath": "C:\\Users\\Pleon\\Downloads\\Patrones-de-disenio-master\\Patrones-de-disenio-master\\Proyecto .Net\\Customer.Domain\\Customer.Domain.csproj",
+        "projectPath": "C:\\Aplicaciones Personales\\proyecto-android-api\\Customer.Domain\\Customer.Domain.csproj",
         "packagesPath": "C:\\Users\\Pleon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Pleon\\Downloads\\Patrones-de-disenio-master\\Patrones-de-disenio-master\\Proyecto .Net\\Customer.Domain\\obj\\",
+        "outputPath": "C:\\Aplicaciones Personales\\proyecto-android-api\\Customer.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Pleon\\AppData\\Roaming\\NuGet\\NuGet.Config",

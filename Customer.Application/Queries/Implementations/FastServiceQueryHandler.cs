@@ -44,7 +44,19 @@ namespace Customer.Application.Queries.Implementations
 
             return entityUser;
         }
-      
+
+        public userLoginViewModel Prueba(LoginRequest login)
+        {
+            var entityUser = new userLoginViewModel();
+
+            entityUser.nombre = "Hola 1";
+            entityUser.apellido = "Hola 2";
+            entityUser.id_usuario = 1;
+
+            return entityUser;
+        }
+
+
         public SqlConnection GetSqlConnection(bool open = true)
         {
             var csb = new SqlConnectionStringBuilder(IConnection_.GetConnectionString()) { };

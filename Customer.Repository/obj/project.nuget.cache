@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CA5Mdbq4ZYnhe+3bsg8zwF2jtvBlCk+DXOItr+QyBBTxVE0/4gB6BGfxLcRgf1F5RUi+fdd3XeyeihDw6ZjGVA==",
+  "dgSpecHash": "cRE4ZL+w84bz2Q2HTqCs6N8ZvElVHOMZGJZOP0Sm9x4n1NYn3MnplS7z6de1zIvOZqBMRtyYXaIgisnJcNF7tw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Pleon\\Downloads\\Patrones-de-disenio-master\\Patrones-de-disenio-master\\Proyecto .Net\\Customer.Repository\\Customer.Repository.csproj",
+  "projectFilePath": "C:\\Aplicaciones Personales\\proyecto-android-api\\Customer.Repository\\Customer.Repository.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Pleon\\.nuget\\packages\\dapper\\2.0.90\\dapper.2.0.90.nupkg.sha512",
     "C:\\Users\\Pleon\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

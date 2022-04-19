@@ -8,5 +8,6 @@ namespace Customer.Application.Queries.Interfaces
     public interface IFastServiceQueryHandler
     {
         public userLoginViewModel Login(LoginRequest login);
+        userLoginViewModel Prueba(LoginRequest login);
     }
 }
