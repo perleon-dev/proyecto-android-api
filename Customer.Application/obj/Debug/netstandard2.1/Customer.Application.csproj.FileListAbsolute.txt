@@ -11,3 +11,16 @@ C:\Users\Pleon\Downloads\Patrones-de-disenio-master\Patrones-de-disenio-master\P
 C:\Users\Pleon\Downloads\Patrones-de-disenio-master\Patrones-de-disenio-master\Proyecto .Net\Customer.Application\obj\Debug\netstandard2.1\Customer.Application.csproj.CopyComplete
 C:\Users\Pleon\Downloads\Patrones-de-disenio-master\Patrones-de-disenio-master\Proyecto .Net\Customer.Application\obj\Debug\netstandard2.1\Customer.Application.dll
 C:\Users\Pleon\Downloads\Patrones-de-disenio-master\Patrones-de-disenio-master\Proyecto .Net\Customer.Application\obj\Debug\netstandard2.1\Customer.Application.pdb
+C:\Aplicaciones Personales\proyecto-android-api\Customer.Application\bin\Debug\netstandard2.1\Customer.Application.deps.json
+C:\Aplicaciones Personales\proyecto-android-api\Customer.Application\bin\Debug\netstandard2.1\Customer.Application.dll
+C:\Aplicaciones Personales\proyecto-android-api\Customer.Application\bin\Debug\netstandard2.1\Customer.Application.pdb
+C:\Aplicaciones Personales\proyecto-android-api\Customer.Application\bin\Debug\netstandard2.1\Customer.Domain.dll
+C:\Aplicaciones Personales\proyecto-android-api\Customer.Application\bin\Debug\netstandard2.1\Customer.Domain.pdb
+C:\Aplicaciones Personales\proyecto-android-api\Customer.Application\obj\Debug\netstandard2.1\Customer.Application.csproj.AssemblyReference.cache
+C:\Aplicaciones Personales\proyecto-android-api\Customer.Application\obj\Debug\netstandard2.1\Customer.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Aplicaciones Personales\proyecto-android-api\Customer.Application\obj\Debug\netstandard2.1\Customer.Application.AssemblyInfoInputs.cache
+C:\Aplicaciones Personales\proyecto-android-api\Customer.Application\obj\Debug\netstandard2.1\Customer.Application.AssemblyInfo.cs
+C:\Aplicaciones Personales\proyecto-android-api\Customer.Application\obj\Debug\netstandard2.1\Customer.Application.csproj.CoreCompileInputs.cache
+C:\Aplicaciones Personales\proyecto-android-api\Customer.Application\obj\Debug\netstandard2.1\Customer.Application.csproj.CopyComplete
+C:\Aplicaciones Personales\proyecto-android-api\Customer.Application\obj\Debug\netstandard2.1\Customer.Application.dll
+C:\Aplicaciones Personales\proyecto-android-api\Customer.Application\obj\Debug\netstandard2.1\Customer.Application.pdb

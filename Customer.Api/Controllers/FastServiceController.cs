@@ -32,6 +32,15 @@ namespace Customer.Api.Controllers
             return Ok(result);
         }
 
+        [HttpPost("register-user")]
+        [ProducesResponseType(typeof(int), (int)HttpStatusCode.OK)]
+        [ProducesResponseType((int)HttpStatusCode.Created)]
+        public async Task<IActionResult> register(RegisterUserRequest register)
+        {
+            var result = IFastServiceQueryHandler.RegisterUser(register);
+            return Ok(result);
+        }
+
         [HttpPost("prueba")]
         [ProducesResponseType(typeof(userLoginViewModel), (int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.NotFound)]

@@ -45,6 +45,38 @@ namespace Customer.Application.Queries.Implementations
             return entityUser;
         }
 
+        public int RegisterUser(RegisterUserRequest register)
+        {
+            int response = 0;
+            try
+            {
+                using (var db = GetSqlConnection())
+                {
+                    const string sql = @"sp_insert_update_usuario";
+
+                    var p = new DynamicParameters();
+                    p.Add(name: "@id_persona", value: 0, dbType: DbType.Int32, direction: ParameterDirection.Input);
+                    p.Add(name: "@documento_identidad", value: register.documento_identidad, dbType: DbType.String, direction: ParameterDirection.Input);
+                    p.Add(name: "@nombre", value: register.nombre, dbType: DbType.String, direction: ParameterDirection.Input);
+                    p.Add(name: "@apellido", value: register.apellido, dbType: DbType.String, direction: ParameterDirection.Input);
+                    p.Add(name: "@direccion", value: register.direccion, dbType: DbType.String, direction: ParameterDirection.Input);
+                    p.Add(name: "@correo", value: register.correo, dbType: DbType.String, direction: ParameterDirection.Input);
+                    p.Add(name: "@clave", value: register.clave, dbType: DbType.String, direction: ParameterDirection.Input);
+                    p.Add(name: "@telefono", value: register.telefono, dbType: DbType.String, direction: ParameterDirection.Input);
+                    p.Add(name: "@tipo_usuario", value: register.tipo_usuario, dbType: DbType.Int32, direction: ParameterDirection.Input);
+
+                    db.Query(sql: sql, param: p, commandType: CommandType.StoredProcedure).FirstOrDefault();
+                    response = 1;
+                }
+            }
+            catch (Exception ex)
+            {
+                response = 0;
+            }
+
+            return response;
+        }
+
         public userLoginViewModel Prueba(LoginRequest login)
         {
             var entityUser = new userLoginViewModel();
