@@ -9,6 +9,7 @@ namespace Customer.Application.Queries.Interfaces
     {
         userLoginViewModel Login(LoginRequest login);
         ResponseViewModel RegisterUser(RegisterUserRequest register);
+        List<PedidoHistoricoPorUsuarioViewModel> SearchPedidoIdcliente(int id_cliente);
         userLoginViewModel Prueba(LoginRequest login);
     }
 }

@@ -41,6 +41,15 @@ namespace Customer.Api.Controllers
             return Ok(result);
         }
 
+        [HttpPost("search-product-idcliente")]
+        [ProducesResponseType(typeof(ResponseViewModel), (int)HttpStatusCode.OK)]
+        [ProducesResponseType((int)HttpStatusCode.Created)]
+        public async Task<IActionResult> searchProductIdcliente(int id_cliente)
+        {
+            var result = IFastServiceQueryHandler.SearchPedidoIdcliente(id_cliente);
+            return Ok(result);
+        }
+
         [HttpPost("prueba")]
         [ProducesResponseType(typeof(userLoginViewModel), (int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.NotFound)]

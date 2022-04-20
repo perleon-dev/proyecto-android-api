@@ -79,6 +79,30 @@ namespace Customer.Application.Queries.Implementations
             return response;
         }
 
+        public List<PedidoHistoricoPorUsuarioViewModel> SearchPedidoIdcliente(int id_cliente)
+        {
+            List<PedidoHistoricoPorUsuarioViewModel> response = new List<PedidoHistoricoPorUsuarioViewModel>();
+            try
+            {
+                using (var db = GetSqlConnection())
+                {
+                    const string sql = @"sp_search_pedido_idcliente";
+
+                    var p = new DynamicParameters();
+                    p.Add(name: "@id_cliente", value: id_cliente, dbType: DbType.Int32, direction: ParameterDirection.Input);
+
+                   response = db.Query<PedidoHistoricoPorUsuarioViewModel>(sql: sql, param: p, commandType: CommandType.StoredProcedure).ToList();
+                    
+                }
+            }
+            catch (Exception ex)
+            {
+                response = null;
+            }
+
+            return response;
+        }
+
         public userLoginViewModel Prueba(LoginRequest login)
         {
             var entityUser = new userLoginViewModel();
