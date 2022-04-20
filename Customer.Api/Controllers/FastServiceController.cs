@@ -33,7 +33,7 @@ namespace Customer.Api.Controllers
         }
 
         [HttpPost("register-user")]
-        [ProducesResponseType(typeof(int), (int)HttpStatusCode.OK)]
+        [ProducesResponseType(typeof(ResponseViewModel), (int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.Created)]
         public async Task<IActionResult> register(RegisterUserRequest register)
         {

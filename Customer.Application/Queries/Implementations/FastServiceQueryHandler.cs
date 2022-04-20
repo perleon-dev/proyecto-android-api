@@ -45,9 +45,9 @@ namespace Customer.Application.Queries.Implementations
             return entityUser;
         }
 
-        public int RegisterUser(RegisterUserRequest register)
+        public ResponseViewModel RegisterUser(RegisterUserRequest register)
         {
-            int response = 0;
+            ResponseViewModel response = new ResponseViewModel();
             try
             {
                 using (var db = GetSqlConnection())
@@ -66,12 +66,14 @@ namespace Customer.Application.Queries.Implementations
                     p.Add(name: "@tipo_usuario", value: register.tipo_usuario, dbType: DbType.Int32, direction: ParameterDirection.Input);
 
                     db.Query(sql: sql, param: p, commandType: CommandType.StoredProcedure).FirstOrDefault();
-                    response = 1;
+                    response.codigo = 200;
+                    response.descripcion = "registro exitoso";
                 }
             }
             catch (Exception ex)
             {
-                response = 0;
+                response.codigo = 500;
+                response.descripcion = "registro fallido";
             }
 
             return response;

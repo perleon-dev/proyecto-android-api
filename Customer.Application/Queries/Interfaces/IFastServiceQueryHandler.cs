@@ -7,8 +7,8 @@ namespace Customer.Application.Queries.Interfaces
 {
     public interface IFastServiceQueryHandler
     {
-        public userLoginViewModel Login(LoginRequest login);
-        int RegisterUser(RegisterUserRequest register);
+        userLoginViewModel Login(LoginRequest login);
+        ResponseViewModel RegisterUser(RegisterUserRequest register);
         userLoginViewModel Prueba(LoginRequest login);
     }
 }
