@@ -43,10 +43,17 @@ namespace Customer.Api.Controllers
 
         [HttpGet("search-product-idcliente")]
         [ProducesResponseType(typeof(ResponseViewModel), (int)HttpStatusCode.OK)]
-        [ProducesResponseType((int)HttpStatusCode.Created)]
         public async Task<IActionResult> searchProductIdcliente(int id_cliente)
         {
             var result = IFastServiceQueryHandler.SearchPedidoIdcliente(id_cliente);
+            return Ok(result);
+        }
+
+        [HttpGet("get-tipo-usuario")]
+        [ProducesResponseType(typeof(TipoUsuarioViewModel), (int)HttpStatusCode.OK)]
+        public async Task<IActionResult> getTipoUsuario()
+        {
+            var result = IFastServiceQueryHandler.GetTipoUsuario();
             return Ok(result);
         }
 

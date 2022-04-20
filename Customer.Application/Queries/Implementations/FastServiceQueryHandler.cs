@@ -103,6 +103,18 @@ namespace Customer.Application.Queries.Implementations
             return response;
         }
 
+        public List<TipoUsuarioViewModel> GetTipoUsuario() 
+        {
+            List<TipoUsuarioViewModel> list = new List<TipoUsuarioViewModel>() 
+            {
+                new TipoUsuarioViewModel() { id_tipo = 1, descripcion = "Cliente" },
+                new TipoUsuarioViewModel() { id_tipo = 2, descripcion = "Repartidor" }
+            };
+
+            return list; 
+        }
+
+
         public userLoginViewModel Prueba(LoginRequest login)
         {
             var entityUser = new userLoginViewModel();
