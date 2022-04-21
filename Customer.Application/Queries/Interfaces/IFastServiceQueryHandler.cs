@@ -12,5 +12,7 @@ namespace Customer.Application.Queries.Interfaces
         List<PedidoHistoricoPorUsuarioViewModel> SearchPedidoIdcliente(int id_cliente);
         List<TipoUsuarioViewModel> GetTipoUsuario();
         userLoginViewModel Prueba(LoginRequest login);
+
+        nuevaSolicitudViewModel NuevaSolicitudPedido();
     }
 }

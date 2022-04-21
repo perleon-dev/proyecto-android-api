@@ -41,6 +41,15 @@ namespace Customer.Api.Controllers
             return Ok(result);
         }
 
+        [HttpGet("nueva-solicitud-pedido")]
+        [ProducesResponseType(typeof(ResponseViewModel), (int)HttpStatusCode.OK)]
+        [ProducesResponseType((int)HttpStatusCode.Created)]
+        public async Task<IActionResult> nuevaSolicitudPedido()
+        {
+            var result = IFastServiceQueryHandler.NuevaSolicitudPedido();
+            return Ok(result);
+        }
+
         [HttpGet("search-product-idcliente")]
         [ProducesResponseType(typeof(ResponseViewModel), (int)HttpStatusCode.OK)]
         public async Task<IActionResult> searchProductIdcliente(int id_cliente)

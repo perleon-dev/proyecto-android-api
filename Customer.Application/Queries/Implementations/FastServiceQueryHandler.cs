@@ -135,5 +135,40 @@ namespace Customer.Application.Queries.Implementations
             if (open) conn.Open();
             return conn;
         }
+
+        public nuevaSolicitudViewModel NuevaSolicitudPedido()
+        {
+            var entityUser = new nuevaSolicitudViewModel();
+
+            try
+            {
+                /* using (var db = GetSqlConnection())
+                 {
+                     const string sql = @"sp_login";
+
+                     var p = new DynamicParameters();
+                     p.Add(name: "@correo", value: login.UserName, dbType: DbType.String, direction: ParameterDirection.Input);
+                     p.Add(name: "@clave", value: login.Password, dbType: DbType.String, direction: ParameterDirection.Input);
+
+                     entityUser = db.Query<nuevaSolicitudViewModel>(sql: sql, param: p, commandType: CommandType.StoredProcedure).FirstOrDefault();
+                 }**/
+
+                entityUser.nombre = "Percy Leon";
+                entityUser.celular = 998184705;
+                entityUser.puntoDestino = "Calle Delta 123, Callao";
+                entityUser.puntoRecojo = "Calle Beta 200, Lima";
+                entityUser.Detalle = "Documentos";
+
+
+
+            }
+            catch (Exception ex)
+            {
+                entityUser = null;
+            }
+
+            return entityUser;
+
+        }
     }
 }

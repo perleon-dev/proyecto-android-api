@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\Pleon\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Pleon\\.nuget\\packages"
+      "C:\\Users\\ITSystem-Xentic\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\ITSystem-Xentic\\.nuget\\packages"
     ]
   }
 }

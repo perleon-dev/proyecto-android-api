@@ -8,19 +8,19 @@
     ".NETStandard,Version=v2.1": []
   },
   "packageFolders": {
-    "C:\\Users\\Pleon\\.nuget\\packages\\": {}
+    "C:\\Users\\ITSystem-Xentic\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Aplicaciones Personales\\proyecto-android-api\\Customer.Domain\\Customer.Domain.csproj",
+      "projectUniqueName": "C:\\UPC\\REST\\proyecto-android-api\\Customer.Domain\\Customer.Domain.csproj",
       "projectName": "Customer.Domain",
-      "projectPath": "C:\\Aplicaciones Personales\\proyecto-android-api\\Customer.Domain\\Customer.Domain.csproj",
-      "packagesPath": "C:\\Users\\Pleon\\.nuget\\packages\\",
-      "outputPath": "C:\\Aplicaciones Personales\\proyecto-android-api\\Customer.Domain\\obj\\",
+      "projectPath": "C:\\UPC\\REST\\proyecto-android-api\\Customer.Domain\\Customer.Domain.csproj",
+      "packagesPath": "C:\\Users\\ITSystem-Xentic\\.nuget\\packages\\",
+      "outputPath": "C:\\UPC\\REST\\proyecto-android-api\\Customer.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Pleon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ITSystem-Xentic\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.213\\RuntimeIdentifierGraph.json"
       }
     }
   }
