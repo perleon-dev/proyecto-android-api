@@ -142,22 +142,22 @@ namespace Customer.Application.Queries.Implementations
 
             try
             {
-                /* using (var db = GetSqlConnection())
+                using (var db = GetSqlConnection())
                  {
-                     const string sql = @"sp_login";
+                     const string sql = @"sp_solicitudpedido";
 
-                     var p = new DynamicParameters();
+                     /*var p = new DynamicParameters();
                      p.Add(name: "@correo", value: login.UserName, dbType: DbType.String, direction: ParameterDirection.Input);
-                     p.Add(name: "@clave", value: login.Password, dbType: DbType.String, direction: ParameterDirection.Input);
+                     p.Add(name: "@clave", value: login.Password, dbType: DbType.String, direction: ParameterDirection.Input);*/
 
-                     entityUser = db.Query<nuevaSolicitudViewModel>(sql: sql, param: p, commandType: CommandType.StoredProcedure).FirstOrDefault();
-                 }**/
+                     entityUser = db.Query<nuevaSolicitudViewModel>(sql: sql,null, commandType: CommandType.StoredProcedure).FirstOrDefault();
+                 }
 
-                entityUser.nombre = "Percy Leon";
+               /* entityUser.nombre = "Percy Leon";
                 entityUser.celular = 998184705;
                 entityUser.puntoDestino = "Calle Delta 123, Callao";
                 entityUser.puntoRecojo = "Calle Beta 200, Lima";
-                entityUser.Detalle = "Documentos";
+                entityUser.Detalle = "Documentos";*/
 
 
 

@@ -6,11 +6,12 @@ namespace Customer.Application.Queries.ViewModels
 {
     public class nuevaSolicitudViewModel
     {
+        public int id_solicitud { get; set; }
         public string nombre { get; set; }
-        public int celular { get; set; }
-        public string puntoRecojo { get; set; }
+        public int telefono { get; set; }
+        public string punto_recojo { get; set; }
 
-        public string puntoDestino { get; set; }
+        public string punto_destino { get; set; }
         public string Detalle { get; set; }
     }
 }
