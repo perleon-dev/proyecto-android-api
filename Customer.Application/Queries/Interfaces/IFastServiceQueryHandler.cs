@@ -14,5 +14,9 @@ namespace Customer.Application.Queries.Interfaces
         userLoginViewModel Prueba(LoginRequest login);
 
         nuevaSolicitudViewModel NuevaSolicitudPedido();
+
+        ResponseViewModel AceptarPedido(int id_solicitud, int id_repartidor);
+
+
     }
 }

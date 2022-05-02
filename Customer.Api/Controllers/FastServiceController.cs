@@ -42,11 +42,20 @@ namespace Customer.Api.Controllers
         }
 
         [HttpGet("nueva-solicitud-pedido")]
-        [ProducesResponseType(typeof(ResponseViewModel), (int)HttpStatusCode.OK)]
+        [ProducesResponseType(typeof(nuevaSolicitudViewModel), (int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.Created)]
         public async Task<IActionResult> nuevaSolicitudPedido()
         {
             var result = IFastServiceQueryHandler.NuevaSolicitudPedido();
+            return Ok(result);
+        }
+
+        [HttpPost("aceptar-pedido")]
+        [ProducesResponseType(typeof(ResponseViewModel), (int)HttpStatusCode.OK)]
+        [ProducesResponseType((int)HttpStatusCode.NotFound)]
+        public async Task<IActionResult> aceptarPedido(int id_solicitud,int id_repartidor)
+        {
+            var result = IFastServiceQueryHandler.AceptarPedido(id_solicitud,id_repartidor);
             return Ok(result);
         }
 

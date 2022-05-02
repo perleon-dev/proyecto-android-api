@@ -146,19 +146,12 @@ namespace Customer.Application.Queries.Implementations
                  {
                      const string sql = @"sp_solicitudpedido";
 
-                     /*var p = new DynamicParameters();
-                     p.Add(name: "@correo", value: login.UserName, dbType: DbType.String, direction: ParameterDirection.Input);
-                     p.Add(name: "@clave", value: login.Password, dbType: DbType.String, direction: ParameterDirection.Input);*/
+                    
 
                      entityUser = db.Query<nuevaSolicitudViewModel>(sql: sql,null, commandType: CommandType.StoredProcedure).FirstOrDefault();
                  }
 
-               /* entityUser.nombre = "Percy Leon";
-                entityUser.celular = 998184705;
-                entityUser.puntoDestino = "Calle Delta 123, Callao";
-                entityUser.puntoRecojo = "Calle Beta 200, Lima";
-                entityUser.Detalle = "Documentos";*/
-
+              
 
 
             }
@@ -168,6 +161,38 @@ namespace Customer.Application.Queries.Implementations
             }
 
             return entityUser;
+
+        }
+        public ResponseViewModel AceptarPedido(int id_solicitud, int id_repartidor)
+        {
+            ResponseViewModel response = new ResponseViewModel();
+
+            try
+            {
+                using (var db = GetSqlConnection())
+                {
+                    const string sql = @"sp_aceptarpedido";
+
+                    var p = new DynamicParameters();
+                    p.Add(name: "@id_solicitud", id_solicitud, dbType: DbType.Int32, direction: ParameterDirection.Input);
+                    p.Add(name: "@id_repartidor", id_repartidor, dbType: DbType.Int32, direction: ParameterDirection.Input);
+
+                    db.Query(sql: sql, p, commandType: CommandType.StoredProcedure).FirstOrDefault();
+                    response.codigo = 200;
+                    response.descripcion = "Se aceptó el pedido";
+                }
+
+               
+
+
+            }
+            catch (Exception ex)
+            {
+                response.codigo = 500;
+                response.descripcion = "registro fallido";
+            }
+
+            return response;
 
         }
     }
