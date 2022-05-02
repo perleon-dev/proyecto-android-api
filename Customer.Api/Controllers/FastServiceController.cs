@@ -53,9 +53,9 @@ namespace Customer.Api.Controllers
         [HttpPost("aceptar-pedido")]
         [ProducesResponseType(typeof(ResponseViewModel), (int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.Created)]
-        public async Task<IActionResult> aceptarPedido(int id_solicitud,int id_repartidor)
+        public async Task<IActionResult> aceptarPedido(AceptarPedidoRequest aceptarPedido)
         {
-            var result = IFastServiceQueryHandler.AceptarPedido(id_solicitud,id_repartidor);
+            var result = IFastServiceQueryHandler.AceptarPedido(aceptarPedido);
             return Ok(result);
         }
 

@@ -163,7 +163,7 @@ namespace Customer.Application.Queries.Implementations
             return entityUser;
 
         }
-        public ResponseViewModel AceptarPedido(int id_solicitud, int id_repartidor)
+        public ResponseViewModel AceptarPedido(AceptarPedidoRequest aceptarPedido)
         {
             ResponseViewModel response = new ResponseViewModel();
 
@@ -174,11 +174,11 @@ namespace Customer.Application.Queries.Implementations
                     const string sql = @"sp_aceptarpedido";
 
                     var p = new DynamicParameters();
-                    p.Add(name: "@id_solicitud", id_solicitud, dbType: DbType.Int32, direction: ParameterDirection.Input);
-                    p.Add(name: "@id_repartidor", id_repartidor, dbType: DbType.Int32, direction: ParameterDirection.Input);
+                    p.Add(name: "@id_solicitud", aceptarPedido.id_solicitud, dbType: DbType.Int32, direction: ParameterDirection.Input);
+                    p.Add(name: "@id_repartidor", aceptarPedido.id_repartidor, dbType: DbType.Int32, direction: ParameterDirection.Input);
 
                     //db.Query(sql: sql, param: p, commandType: CommandType.StoredProcedure).FirstOrDefault();
-                    response.descripcion = Convert.ToString(db.Execute(sql: sql, param: p, commandType: CommandType.StoredProcedure)) + " parametros " + id_solicitud + " - " + id_repartidor;
+                    response.descripcion = Convert.ToString(db.Execute(sql: sql, param: p, commandType: CommandType.StoredProcedure)) + " parametros " + aceptarPedido.id_solicitud + " - " + aceptarPedido.id_repartidor;
 
                     response.codigo = 200;
                     //response.descripcion = "Se aceptó el pedido";

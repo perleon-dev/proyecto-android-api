@@ -15,7 +15,7 @@ namespace Customer.Application.Queries.Interfaces
 
         nuevaSolicitudViewModel NuevaSolicitudPedido();
 
-        ResponseViewModel AceptarPedido(int id_solicitud, int id_repartidor);
+        ResponseViewModel AceptarPedido(AceptarPedidoRequest aceptarPedido);
 
 
     }
