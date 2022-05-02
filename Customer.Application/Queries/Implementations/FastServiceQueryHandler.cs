@@ -177,9 +177,11 @@ namespace Customer.Application.Queries.Implementations
                     p.Add(name: "@id_solicitud", id_solicitud, dbType: DbType.Int32, direction: ParameterDirection.Input);
                     p.Add(name: "@id_repartidor", id_repartidor, dbType: DbType.Int32, direction: ParameterDirection.Input);
 
-                    db.Query(sql: sql, p, commandType: CommandType.StoredProcedure).FirstOrDefault();
+                    //db.Query(sql: sql, param: p, commandType: CommandType.StoredProcedure).FirstOrDefault();
+                    response.descripcion = Convert.ToString(db.Execute(sql: sql, param: p, commandType: CommandType.StoredProcedure));
+
                     response.codigo = 200;
-                    response.descripcion = "Se aceptó el pedido";
+                    //response.descripcion = "Se aceptó el pedido";
                 }
 
                
