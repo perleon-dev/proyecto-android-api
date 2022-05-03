@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/Fodn69B+VXFT8khwcDnOlDbGEv9d7O9cdn8bOLenj1ffk1PGLJKlpZYvqSluvo19PEO1gb49ltOixjPQtDqEQ==",
+  "dgSpecHash": "eJW4VRekle7bONRzXWOlaLu6RyGFsqjLIpNOhmQlT0QVoKEBQT4cRWv4jX50Z5j/Eninie3l2XbrC2TgIrMyvw==",
   "success": true,
-  "projectFilePath": "C:\\UPC\\REST\\proyecto-android-api\\Customer.Domain\\Customer.Domain.csproj",
+  "projectFilePath": "C:\\Aplicaciones Personales\\proyecto-android-api\\Customer.Domain\\Customer.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

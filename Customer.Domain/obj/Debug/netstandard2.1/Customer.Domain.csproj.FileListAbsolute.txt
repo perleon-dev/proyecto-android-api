@@ -17,3 +17,12 @@ C:\UPC\REST\proyecto-android-api\Customer.Domain\obj\Debug\netstandard2.1\Custom
 C:\UPC\REST\proyecto-android-api\Customer.Domain\obj\Debug\netstandard2.1\Customer.Domain.csproj.CoreCompileInputs.cache
 C:\UPC\REST\proyecto-android-api\Customer.Domain\obj\Debug\netstandard2.1\Customer.Domain.dll
 C:\UPC\REST\proyecto-android-api\Customer.Domain\obj\Debug\netstandard2.1\Customer.Domain.pdb
+C:\Aplicaciones Personales\proyecto-android-api\Customer.Domain\bin\Debug\netstandard2.1\Customer.Domain.deps.json
+C:\Aplicaciones Personales\proyecto-android-api\Customer.Domain\bin\Debug\netstandard2.1\Customer.Domain.dll
+C:\Aplicaciones Personales\proyecto-android-api\Customer.Domain\bin\Debug\netstandard2.1\Customer.Domain.pdb
+C:\Aplicaciones Personales\proyecto-android-api\Customer.Domain\obj\Debug\netstandard2.1\Customer.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Aplicaciones Personales\proyecto-android-api\Customer.Domain\obj\Debug\netstandard2.1\Customer.Domain.AssemblyInfoInputs.cache
+C:\Aplicaciones Personales\proyecto-android-api\Customer.Domain\obj\Debug\netstandard2.1\Customer.Domain.AssemblyInfo.cs
+C:\Aplicaciones Personales\proyecto-android-api\Customer.Domain\obj\Debug\netstandard2.1\Customer.Domain.csproj.CoreCompileInputs.cache
+C:\Aplicaciones Personales\proyecto-android-api\Customer.Domain\obj\Debug\netstandard2.1\Customer.Domain.dll
+C:\Aplicaciones Personales\proyecto-android-api\Customer.Domain\obj\Debug\netstandard2.1\Customer.Domain.pdb

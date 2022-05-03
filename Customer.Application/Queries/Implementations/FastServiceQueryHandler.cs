@@ -197,5 +197,79 @@ namespace Customer.Application.Queries.Implementations
             return response;
 
         }
+
+        public UsuarioViewModel get_by_id_usuario(int idPersona)
+        {
+            var entityUser = new UsuarioViewModel();
+
+            try
+            {
+                using (var db = GetSqlConnection())
+                {
+                    const string sql = @"sp_get_by_id_usuario";
+
+                    var p = new DynamicParameters();
+                    p.Add(name: "@id_persona", value: idPersona, dbType: DbType.String, direction: ParameterDirection.Input);
+
+                    entityUser = db.Query<UsuarioViewModel>(sql: sql, param: p, commandType: CommandType.StoredProcedure).FirstOrDefault();
+                }
+            }
+            catch (Exception ex)
+            {
+                entityUser = null;
+            }
+
+            return entityUser;
+        }
+
+        public PedidoHistoricoPorUsuarioViewModel getByIdPedido(int id_cliente)
+        {
+            PedidoHistoricoPorUsuarioViewModel response = new PedidoHistoricoPorUsuarioViewModel();
+            try
+            {
+                using (var db = GetSqlConnection())
+                {
+                    const string sql = @"sp_search_pedido_idcliente";
+
+                    var p = new DynamicParameters();
+                    p.Add(name: "@id_cliente", value: id_cliente, dbType: DbType.Int32, direction: ParameterDirection.Input);
+
+                    response = db.Query<PedidoHistoricoPorUsuarioViewModel>(sql: sql, param: p, commandType: CommandType.StoredProcedure).FirstOrDefault();
+
+                }
+            }
+            catch (Exception ex)
+            {
+                response = null;
+            }
+
+            return response;
+        }
+
+        public List<PedidoHistoricoPorUsuarioViewModel> SearchPedidoIdrepartidor(int id_repartidor)
+        {
+            List<PedidoHistoricoPorUsuarioViewModel> response = new List<PedidoHistoricoPorUsuarioViewModel>();
+            try
+            {
+                using (var db = GetSqlConnection())
+                {
+                    const string sql = @"sp_search_pedido_idrepartidor";
+
+                    var p = new DynamicParameters();
+                    p.Add(name: "@id_repartidor", value: id_repartidor, dbType: DbType.Int32, direction: ParameterDirection.Input);
+
+                    response = db.Query<PedidoHistoricoPorUsuarioViewModel>(sql: sql, param: p, commandType: CommandType.StoredProcedure).ToList();
+
+                }
+            }
+            catch (Exception ex)
+            {
+                response = null;
+            }
+
+            return response;
+        }
+
+
     }
 }

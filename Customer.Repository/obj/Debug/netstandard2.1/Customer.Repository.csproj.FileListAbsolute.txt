@@ -11,6 +11,18 @@ C:\Users\Pleon\Downloads\Patrones-de-disenio-master\Patrones-de-disenio-master\P
 C:\Users\Pleon\Downloads\Patrones-de-disenio-master\Patrones-de-disenio-master\Proyecto .Net\Customer.Repository\obj\Debug\netstandard2.1\Customer.Repository.csproj.CopyComplete
 C:\Users\Pleon\Downloads\Patrones-de-disenio-master\Patrones-de-disenio-master\Proyecto .Net\Customer.Repository\obj\Debug\netstandard2.1\Customer.Repository.dll
 C:\Users\Pleon\Downloads\Patrones-de-disenio-master\Patrones-de-disenio-master\Proyecto .Net\Customer.Repository\obj\Debug\netstandard2.1\Customer.Repository.pdb
+C:\UPC\REST\proyecto-android-api\Customer.Repository\bin\Debug\netstandard2.1\Customer.Repository.deps.json
+C:\UPC\REST\proyecto-android-api\Customer.Repository\bin\Debug\netstandard2.1\Customer.Repository.dll
+C:\UPC\REST\proyecto-android-api\Customer.Repository\bin\Debug\netstandard2.1\Customer.Repository.pdb
+C:\UPC\REST\proyecto-android-api\Customer.Repository\bin\Debug\netstandard2.1\Customer.Domain.dll
+C:\UPC\REST\proyecto-android-api\Customer.Repository\bin\Debug\netstandard2.1\Customer.Domain.pdb
+C:\UPC\REST\proyecto-android-api\Customer.Repository\obj\Debug\netstandard2.1\Customer.Repository.csprojAssemblyReference.cache
+C:\UPC\REST\proyecto-android-api\Customer.Repository\obj\Debug\netstandard2.1\Customer.Repository.AssemblyInfoInputs.cache
+C:\UPC\REST\proyecto-android-api\Customer.Repository\obj\Debug\netstandard2.1\Customer.Repository.AssemblyInfo.cs
+C:\UPC\REST\proyecto-android-api\Customer.Repository\obj\Debug\netstandard2.1\Customer.Repository.csproj.CoreCompileInputs.cache
+C:\UPC\REST\proyecto-android-api\Customer.Repository\obj\Debug\netstandard2.1\Customer.Repository.csproj.CopyComplete
+C:\UPC\REST\proyecto-android-api\Customer.Repository\obj\Debug\netstandard2.1\Customer.Repository.dll
+C:\UPC\REST\proyecto-android-api\Customer.Repository\obj\Debug\netstandard2.1\Customer.Repository.pdb
 C:\Aplicaciones Personales\proyecto-android-api\Customer.Repository\bin\Debug\netstandard2.1\Customer.Repository.deps.json
 C:\Aplicaciones Personales\proyecto-android-api\Customer.Repository\bin\Debug\netstandard2.1\Customer.Repository.dll
 C:\Aplicaciones Personales\proyecto-android-api\Customer.Repository\bin\Debug\netstandard2.1\Customer.Repository.pdb
@@ -24,15 +36,3 @@ C:\Aplicaciones Personales\proyecto-android-api\Customer.Repository\obj\Debug\ne
 C:\Aplicaciones Personales\proyecto-android-api\Customer.Repository\obj\Debug\netstandard2.1\Customer.Repository.csproj.CopyComplete
 C:\Aplicaciones Personales\proyecto-android-api\Customer.Repository\obj\Debug\netstandard2.1\Customer.Repository.dll
 C:\Aplicaciones Personales\proyecto-android-api\Customer.Repository\obj\Debug\netstandard2.1\Customer.Repository.pdb
-C:\UPC\REST\proyecto-android-api\Customer.Repository\bin\Debug\netstandard2.1\Customer.Repository.deps.json
-C:\UPC\REST\proyecto-android-api\Customer.Repository\bin\Debug\netstandard2.1\Customer.Repository.dll
-C:\UPC\REST\proyecto-android-api\Customer.Repository\bin\Debug\netstandard2.1\Customer.Repository.pdb
-C:\UPC\REST\proyecto-android-api\Customer.Repository\bin\Debug\netstandard2.1\Customer.Domain.dll
-C:\UPC\REST\proyecto-android-api\Customer.Repository\bin\Debug\netstandard2.1\Customer.Domain.pdb
-C:\UPC\REST\proyecto-android-api\Customer.Repository\obj\Debug\netstandard2.1\Customer.Repository.csprojAssemblyReference.cache
-C:\UPC\REST\proyecto-android-api\Customer.Repository\obj\Debug\netstandard2.1\Customer.Repository.AssemblyInfoInputs.cache
-C:\UPC\REST\proyecto-android-api\Customer.Repository\obj\Debug\netstandard2.1\Customer.Repository.AssemblyInfo.cs
-C:\UPC\REST\proyecto-android-api\Customer.Repository\obj\Debug\netstandard2.1\Customer.Repository.csproj.CoreCompileInputs.cache
-C:\UPC\REST\proyecto-android-api\Customer.Repository\obj\Debug\netstandard2.1\Customer.Repository.csproj.CopyComplete
-C:\UPC\REST\proyecto-android-api\Customer.Repository\obj\Debug\netstandard2.1\Customer.Repository.dll
-C:\UPC\REST\proyecto-android-api\Customer.Repository\obj\Debug\netstandard2.1\Customer.Repository.pdb

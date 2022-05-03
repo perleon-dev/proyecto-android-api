@@ -75,6 +75,30 @@ namespace Customer.Api.Controllers
             return Ok(result);
         }
 
+        [HttpGet("get_by_id_usuario")]
+        [ProducesResponseType(typeof(TipoUsuarioViewModel), (int)HttpStatusCode.OK)]
+        public async Task<IActionResult> get_by_id_usuario(int id_persona)
+        {
+            var result = IFastServiceQueryHandler.get_by_id_usuario(id_persona);
+            return Ok(result);
+        }
+
+        [HttpGet("get-by-id-cliente-pedido")]
+        [ProducesResponseType(typeof(TipoUsuarioViewModel), (int)HttpStatusCode.OK)]
+        public async Task<IActionResult> getByIdClientePedido(int id_persona)
+        {
+            var result = IFastServiceQueryHandler.getByIdPedido(id_persona);
+            return Ok(result);
+        }
+
+        [HttpGet("search-product-idrepartidor")]
+        [ProducesResponseType(typeof(ResponseViewModel), (int)HttpStatusCode.OK)]
+        public async Task<IActionResult> searchProductIdrepartidor(int id_repartidor)
+        {
+            var result = IFastServiceQueryHandler.SearchPedidoIdrepartidor(id_repartidor);
+            return Ok(result);
+        }
+
         [HttpPost("prueba")]
         [ProducesResponseType(typeof(userLoginViewModel), (int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.NotFound)]
