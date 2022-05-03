@@ -17,6 +17,8 @@ namespace Customer.Application.Queries.Interfaces
 
         ResponseViewModel AceptarPedido(AceptarPedidoRequest aceptarPedido);
 
+        ResponseViewModel CancelarSolicitud(CancelarSolicitudRequest cancelarSolicitud);
+
 
     }
 }

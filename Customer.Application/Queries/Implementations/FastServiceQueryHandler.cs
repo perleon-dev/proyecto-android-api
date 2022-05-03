@@ -197,5 +197,40 @@ namespace Customer.Application.Queries.Implementations
             return response;
 
         }
+
+        public ResponseViewModel CancelarSolicitud(CancelarSolicitudRequest cancelarSolicitud)
+        {
+            ResponseViewModel response = new ResponseViewModel();
+
+            try
+            {
+                using (var db = GetSqlConnection())
+                {
+                    const string sql = @"sp_cancelarsolicitud";
+
+                    var p = new DynamicParameters();
+                    p.Add(name: "@id_solicitud", cancelarSolicitud.id_solicitud, dbType: DbType.Int32, direction: ParameterDirection.Input);
+                    p.Add(name: "@observaciones", cancelarSolicitud.observaciones, dbType: DbType.String, direction: ParameterDirection.Input);
+
+                    //db.Query(sql: sql, param: p, commandType: CommandType.StoredProcedure).FirstOrDefault();
+                    response.descripcion = Convert.ToString(db.Execute(sql: sql, param: p, commandType: CommandType.StoredProcedure)) + " parametros " + cancelarSolicitud.id_solicitud + " - " + cancelarSolicitud.observaciones;
+
+                    response.codigo = 200;
+                    //response.descripcion = "Se aceptó el pedido";
+                }
+
+
+
+
+            }
+            catch (Exception ex)
+            {
+                response.codigo = 500;
+                response.descripcion = "registro fallido";
+            }
+
+            return response;
+
+        }
     }
 }
