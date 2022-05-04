@@ -270,7 +270,7 @@ namespace Customer.Application.Queries.Implementations
                     var p = new DynamicParameters();
                     p.Add(name: "@id_cliente", value: id_cliente, dbType: DbType.Int32, direction: ParameterDirection.Input);
 
-                    response = db.Query<PedidoHistoricoPorUsuarioViewModel>(sql: sql, param: p, commandType: CommandType.StoredProcedure).FirstOrDefault();
+                    response = db.Query<PedidoHistoricoPorUsuarioViewModel>(sql: sql, param: p, commandType: CommandType.StoredProcedure).Last();
 
                 }
             }
