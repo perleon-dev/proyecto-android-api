@@ -151,9 +151,6 @@ namespace Customer.Application.Queries.Implementations
                      entityUser = db.Query<nuevaSolicitudViewModel>(sql: sql,null, commandType: CommandType.StoredProcedure).FirstOrDefault();
                  }
 
-              
-
-
             }
             catch (Exception ex)
             {
@@ -270,8 +267,30 @@ namespace Customer.Application.Queries.Implementations
             return response;
         }
 
+        public List<ProductosViewModel> FindAllProcutos(int estado)
+        {
+            List<ProductosViewModel> response = new List<ProductosViewModel>();
+            try
+            {
+                using (var db = GetSqlConnection())
+                {
+                    const string sql = @"sp_find_all_productos";
 
+                    var p = new DynamicParameters();
+                    p.Add(name: "@estado", value: estado, dbType: DbType.Int32, direction: ParameterDirection.Input);
 
+                    response = db.Query<ProductosViewModel>(sql: sql, param: p, commandType: CommandType.StoredProcedure).ToList();
+
+                }
+            }
+            catch (Exception ex)
+            {
+                response = null;
+            }
+
+            return response;
+        }
+        
         public ResponseViewModel CancelarSolicitud(CancelarSolicitudRequest cancelarSolicitud)
         {
             ResponseViewModel response = new ResponseViewModel();

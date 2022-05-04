@@ -19,6 +19,7 @@ namespace Customer.Application.Queries.Interfaces
         UsuarioViewModel get_by_id_usuario(int idPersona);
         PedidoHistoricoPorUsuarioViewModel getByIdPedido(int id_cliente);
         List<PedidoHistoricoPorUsuarioViewModel> SearchPedidoIdrepartidor(int id_repartidor);
+        List<ProductosViewModel> FindAllProcutos(int estado);
         ResponseViewModel CancelarSolicitud(CancelarSolicitudRequest cancelarSolicitud);
 
 

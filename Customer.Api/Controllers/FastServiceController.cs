@@ -108,6 +108,16 @@ namespace Customer.Api.Controllers
             return Ok(result);
         }
 
+        [HttpGet("find-all-productos")]
+        [ProducesResponseType(typeof(ResponseViewModel), (int)HttpStatusCode.OK)]
+        public async Task<IActionResult> FindAllProcutos(int estado)
+        {
+            var result = IFastServiceQueryHandler.FindAllProcutos(estado);
+            return Ok(result);
+        }
+
+        
+
         [HttpPost("prueba")]
         [ProducesResponseType(typeof(userLoginViewModel), (int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.NotFound)]
