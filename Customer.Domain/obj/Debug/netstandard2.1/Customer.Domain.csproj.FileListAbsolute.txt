@@ -26,3 +26,4 @@ C:\Aplicaciones Personales\proyecto-android-api\Customer.Domain\obj\Debug\netsta
 C:\Aplicaciones Personales\proyecto-android-api\Customer.Domain\obj\Debug\netstandard2.1\Customer.Domain.csproj.CoreCompileInputs.cache
 C:\Aplicaciones Personales\proyecto-android-api\Customer.Domain\obj\Debug\netstandard2.1\Customer.Domain.dll
 C:\Aplicaciones Personales\proyecto-android-api\Customer.Domain\obj\Debug\netstandard2.1\Customer.Domain.pdb
+C:\Aplicaciones Personales\proyecto-android-api\Customer.Domain\obj\Debug\netstandard2.1\Customer.Domain.csproj.AssemblyReference.cache
