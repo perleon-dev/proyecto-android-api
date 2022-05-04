@@ -59,6 +59,15 @@ namespace Customer.Api.Controllers
             return Ok(result);
         }
 
+        [HttpPost("cancelar-solicitud")]
+        [ProducesResponseType(typeof(ResponseViewModel), (int)HttpStatusCode.OK)]
+        [ProducesResponseType((int)HttpStatusCode.Created)]
+        public async Task<IActionResult> cancelarSolicitud(CancelarSolicitudRequest cancelarSolicitud)
+        {
+            var result = IFastServiceQueryHandler.CancelarSolicitud(cancelarSolicitud);
+            return Ok(result);
+        }
+
         [HttpGet("search-product-idcliente")]
         [ProducesResponseType(typeof(ResponseViewModel), (int)HttpStatusCode.OK)]
         public async Task<IActionResult> searchProductIdcliente(int id_cliente)
