@@ -121,7 +121,7 @@ namespace Customer.Api.Controllers
         public async Task<IActionResult> EscogerProcuto(PedidoRequests pedidoRequests)
         {
             IFastServiceQueryHandler.EscogerProcuto(pedidoRequests);
-            return Ok();
+            return Ok(pedidoRequests);
         }
 
         [HttpPost("prueba")]
