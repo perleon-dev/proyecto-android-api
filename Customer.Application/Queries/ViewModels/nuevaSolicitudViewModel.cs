@@ -13,5 +13,7 @@ namespace Customer.Application.Queries.ViewModels
 
         public string punto_destino { get; set; }
         public string Detalle { get; set; }
+
+        public int id_usuario { get; set; }
     }
 }

@@ -8,5 +8,10 @@ namespace Customer.Application.Queries.ViewModels
     {
         public int id_solicitud { get; set; }
         public int id_repartidor { get; set; }
+
+        public int id_producto { get; set; }
+
+        public int id_cliente { get; set; }
+
     }
 }

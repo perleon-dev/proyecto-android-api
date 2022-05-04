@@ -173,6 +173,8 @@ namespace Customer.Application.Queries.Implementations
                     var p = new DynamicParameters();
                     p.Add(name: "@id_solicitud", aceptarPedido.id_solicitud, dbType: DbType.Int32, direction: ParameterDirection.Input);
                     p.Add(name: "@id_repartidor", aceptarPedido.id_repartidor, dbType: DbType.Int32, direction: ParameterDirection.Input);
+                    p.Add(name: "@id_producto", aceptarPedido.id_producto, dbType: DbType.Int32, direction: ParameterDirection.Input);
+                    p.Add(name: "@id_cliente", aceptarPedido.id_cliente, dbType: DbType.Int32, direction: ParameterDirection.Input);
 
                     //db.Query(sql: sql, param: p, commandType: CommandType.StoredProcedure).FirstOrDefault();
                     response.descripcion = Convert.ToString(db.Execute(sql: sql, param: p, commandType: CommandType.StoredProcedure)) + " parametros " + aceptarPedido.id_solicitud + " - " + aceptarPedido.id_repartidor;
@@ -181,7 +183,8 @@ namespace Customer.Application.Queries.Implementations
                     //response.descripcion = "Se aceptó el pedido";
                 }
 
-               
+
+
 
 
             }
@@ -195,7 +198,43 @@ namespace Customer.Application.Queries.Implementations
 
         }
 
-        public UsuarioViewModel get_by_id_usuario(int idPersona)
+        public ResponseViewModel CancelarSolicitud(CancelarSolicitudRequest cancelarSolicitud)
+        {
+            ResponseViewModel response = new ResponseViewModel();
+
+            try
+            {
+                using (var db = GetSqlConnection())
+                {
+                    const string sql = @"sp_cancelarsolicitud";
+
+                    var p = new DynamicParameters();
+                    p.Add(name: "@id_solicitud", cancelarSolicitud.id_solicitud, dbType: DbType.Int32, direction: ParameterDirection.Input);
+                    p.Add(name: "@observaciones", cancelarSolicitud.observaciones, dbType: DbType.String, direction: ParameterDirection.Input);
+
+                    //db.Query(sql: sql, param: p, commandType: CommandType.StoredProcedure).FirstOrDefault();
+                    response.descripcion = Convert.ToString(db.Execute(sql: sql, param: p, commandType: CommandType.StoredProcedure)) + " parametros " + cancelarSolicitud.id_solicitud + " - " + cancelarSolicitud.observaciones;
+
+                    response.codigo = 200;
+                    //response.descripcion = "Se aceptó el pedido";
+                }
+
+
+
+
+            }
+            catch (Exception ex)
+            {
+                response.codigo = 500;
+                response.descripcion = "registro fallido";
+            }
+
+            return response;
+
+        }
+    
+
+    public UsuarioViewModel get_by_id_usuario(int idPersona)
         {
             var entityUser = new UsuarioViewModel();
 
@@ -315,39 +354,6 @@ namespace Customer.Application.Queries.Implementations
 
         }
 
-        public ResponseViewModel CancelarSolicitud(CancelarSolicitudRequest cancelarSolicitud)
-        {
-            ResponseViewModel response = new ResponseViewModel();
-
-            try
-            {
-                using (var db = GetSqlConnection())
-                {
-                    const string sql = @"sp_cancelarsolicitud";
-
-                    var p = new DynamicParameters();
-                    p.Add(name: "@id_solicitud", cancelarSolicitud.id_solicitud, dbType: DbType.Int32, direction: ParameterDirection.Input);
-                    p.Add(name: "@observaciones", cancelarSolicitud.observaciones, dbType: DbType.String, direction: ParameterDirection.Input);
-
-                    //db.Query(sql: sql, param: p, commandType: CommandType.StoredProcedure).FirstOrDefault();
-                    response.descripcion = Convert.ToString(db.Execute(sql: sql, param: p, commandType: CommandType.StoredProcedure)) + " parametros " + cancelarSolicitud.id_solicitud + " - " + cancelarSolicitud.observaciones;
-
-                    response.codigo = 200;
-                    //response.descripcion = "Se aceptó el pedido";
-                }
-
-
-
-
-            }
-            catch (Exception ex)
-            {
-                response.codigo = 500;
-                response.descripcion = "registro fallido";
-            }
-
-            return response;
-
-        }
+      
     }
 }
