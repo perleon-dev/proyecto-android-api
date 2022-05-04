@@ -21,7 +21,7 @@ namespace Customer.Application.Queries.Interfaces
         List<PedidoHistoricoPorUsuarioViewModel> SearchPedidoIdrepartidor(int id_repartidor);
         List<ProductosViewModel> FindAllProcutos(int estado);
         ResponseViewModel CancelarSolicitud(CancelarSolicitudRequest cancelarSolicitud);
-
+        void EscogerProcuto(PedidoRequests pedidoRequests);
 
     }
 }

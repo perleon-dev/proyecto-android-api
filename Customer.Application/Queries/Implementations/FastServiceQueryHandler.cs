@@ -290,7 +290,31 @@ namespace Customer.Application.Queries.Implementations
 
             return response;
         }
-        
+
+        public void EscogerProcuto(PedidoRequests pedidoRequests)
+        {
+            try
+            {
+                using (var db = GetSqlConnection())
+                {
+                    const string sql = @"sp_insert_pedido";
+
+                    var p = new DynamicParameters();
+                    p.Add(name: "@producto", value: pedidoRequests.Producto, dbType: DbType.String, direction: ParameterDirection.Input);
+                    p.Add(name: "@id_cliente", value: pedidoRequests.id_cliente, dbType: DbType.Int32, direction: ParameterDirection.Input);
+                    p.Add(name: "@comentario", value: pedidoRequests.comentario, dbType: DbType.String, direction: ParameterDirection.Input);
+
+                    db.Query(sql: sql, param: p, commandType: CommandType.StoredProcedure);
+
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
+
+        }
+
         public ResponseViewModel CancelarSolicitud(CancelarSolicitudRequest cancelarSolicitud)
         {
             ResponseViewModel response = new ResponseViewModel();

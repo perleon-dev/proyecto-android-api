@@ -116,7 +116,13 @@ namespace Customer.Api.Controllers
             return Ok(result);
         }
 
-        
+        [HttpPost("escoger-producto")]
+        [ProducesResponseType(typeof(ResponseViewModel), (int)HttpStatusCode.OK)]
+        public async Task<IActionResult> EscogerProcuto(PedidoRequests pedidoRequests)
+        {
+            IFastServiceQueryHandler.EscogerProcuto(pedidoRequests);
+            return Ok();
+        }
 
         [HttpPost("prueba")]
         [ProducesResponseType(typeof(userLoginViewModel), (int)HttpStatusCode.OK)]
